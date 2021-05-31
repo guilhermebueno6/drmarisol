@@ -1,0 +1,284 @@
+<style>
+    p,li{font-size: 22px!important;}
+    li{list-style-type: decimal!important;}
+    li{list-style: none;}
+    h1{
+        font-size: 45px!important;
+    }
+    .SectionHeader__Heading{
+        display: none!important;
+    }
+    .references{font-size: 18px!important;}
+    .headings{font-size: 25px!important; text-align: center; margin: 0!important;}
+    .imgLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 75px;
+    }
+    .mobile{
+        display: none!important;
+    }
+    .imgRight{
+    clear: both;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 75px;
+    }
+    .imgRight img{
+    width: 30%;
+    margin: 0;
+    margin-left: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0, 0.7));
+    }
+    .imgLeft img{
+    width: 30%;
+    margin: 0;
+    margin-right: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0, 0.7));
+    }
+    .ILText{
+    text-align: left;
+    }
+    .ILText h3{
+    font-size: 25px!important;
+    }
+    .bigN{
+    font-size: 50px!important;
+    margin-right: 5px;
+    }
+    .disclaimer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    }
+    .bold{font-weight: 900!important;}
+    .Button{
+    background-color: #eebe34!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+    transition: all .5s ease-in;
+    font-size: 25px!important;
+    font-weight: 700!important;
+    padding: 25px;
+    }
+    .Button:hover{
+    background-color: #143980!important;
+    color: white;
+    }
+    .buttonAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .line{
+    width: 60%;
+    border: 1px solid #6AB2BD;
+    }
+    .bigLine{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        border: 2px solid #6ab2bd;
+    }
+    .threeimg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .col:not(:last-child){
+        margin-right: 50px;
+    }
+    .threeimg img{
+        width: 250px;
+    }
+    .threeimg p{
+        text-align: center;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .note{
+        background-color: #6ab2bd;
+        padding: 25px 10px;
+        
+    }
+    .aboutme{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	
+	}
+	.aboutmewrap{
+		background-color:#f9fbfc;
+		padding:15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.aboutTxt{
+		text-align: left;
+	}
+    .blue{
+		font-weight: 900;
+		color: #143980!important;
+	}
+    .testimonial{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        background-color: #EAF6F7;
+        border: 2px solid #6AB2BD;
+        padding: 5px 15px;
+        margin-bottom: 50px;
+    }
+    .testimonial:last-child{
+        margin-left: 50px;
+    }
+
+    .fa-star{
+        color: #eebe34;
+    }
+    .testimonial p{
+        text-align: left;
+    }
+
+
+    @media screen and (max-width:1024px) {
+    .imgRight,.imgLeft{
+    flex-direction: column;
+    }
+    .testimonial:last-child{
+        margin-left: 0;
+    }
+    .mobile{
+        display: block!important;
+    }
+    .desk{
+        display: none!important;
+    }
+    .aboutmewrap svg{
+			display: none;
+		}
+		.aboutmewrap{
+			flex-direction: column;
+		}
+		.aboutmewrap h1, .aboutmewrap img{
+			margin: 0;
+		}
+    .imgRight img,.imgLeft img{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    }
+    .disclaimer img{
+    width: 40%;
+    }
+    .threeimg img{
+        width: 80%;
+    }
+    .threeimg{
+        flex-direction: column;
+    }
+
+    }
+    
+    @media screen and (max-width:768px){
+        .bigLine{
+            margin-top: -35px;
+        }
+    p{font-size: 18px!important;}
+    h1{font-size: 25px!important;}
+    .headings{font-size: 22px!important;}
+    .Button{font-size: 18px!important; padding: 10px;}
+    .disclaimer{flex-direction: column; align-items: center;}
+    .disclaimer img{width: 100%;}
+    }
+</style>
+<div class='imgRight'>
+<img src='https://cdn05.zipify.com/H5PRZjYUuB1LRrEACAszA5S4Zsg=/1215x1:4452x3237/fit-in/1080x0/d87dcf8c36b84529893c3e4b63c45f8f/ebook-mockup.jpg' alt='alt-text'>
+<div class='IRText'>
+    <h1 class="blue">Thank You! Your Recipe eBook Will Be In Your Inbox.</h1>
+
+    <h2 style="color: #231F20!important;" class="sub">Be sure to check your spam/junk folder if you don't see it.</h2>
+    <h2 style="text-align: left;" class='headings'>Check Out What's Next... Dr. Marisol Has 3 Castor Oil Secrets To Share With YOU!</h2>
+</div>
+</div>
+
+<div class='imgLeft'>
+<img src='https://cdn05.zipify.com/gmcgQrbO3CQTOPUjdnQJRCE9JeI=/fit-in/960x0/274b5c024b3648b8818f48764255b845/secret-1.png' alt='alt-text'>
+<div class='ILText'>
+<h2 style="text-align: left;" class='headings'>VIDEO #1</h2>
+<h2 class="sub">All About Your New Dream Hair Kit</h2>
+<ul>
+    <li>Discover each important tool in you Dream Hair Kit</li>
+    <li>Dr. Marisol ND will show you how the hair wrap and hair pick works</li>
+    <li>Get to know the how the kit works on <b>hormonal hair loss</b></li>
+    <li>Learn what essential oil you can ADD to your hair mask</li>
+    <li>Try out a simple self-care routine with the Dream Hair Kit and Castor Oil Pack</li>
+</ul>
+</div>
+</div>
+
+<div class='imgRight'>
+<img src='https://cdn05.zipify.com/9N5CaafjMTHbiyqZjkYCL0lgR_A=/fit-in/960x0/f87421c563d941348b2769a14b9fa8b6/secret2.png' alt='alt-text'>
+<div class='IRText'>
+    <h2 style="text-align: left;" class='headings'>VIDEO #2</h2>
+    <h2 class="sub">Dream Hair Kit Tutorial With Dr. Marisol </h2>
+    <ul>
+        <li>Get a DEMO on how to use your Dream Hair Kit</li>
+        <li>Discover why castor oil is so good for the hair</li>
+        <li>Watch how to stimulate your scalp for even more benefits and tie your hair wrap and naturally heat the oil</li>
+        <li>Dive into the reasons why this kit promotes hair growth, moisturizes and repairs dry and damaged hair and reduces dandruff</li>
+    </ul>
+</div>
+</div>
+
+<div class='imgLeft'>
+<img src='https://cdn05.zipify.com/p4L6S0HH6EfyH-KJab6Wx3sAF8w=/fit-in/960x0/5485418a97f94d668feac07504fe8eeb/secret3.png' alt='alt-text'>
+<div class='ILText'>
+    <h2 style="text-align: left;" class='headings'>VIDEO #3</h2>
+    <h2 class="sub">Amazing 7 Essential Oil Hair Mask Recipe</h2>
+    <ul>
+        <li>Find out why castor oil alone is the BEST hair oil </li>
+        <li>Learn how to blend 7 essential oils for hair growth</li>
+        <li>Dr. Marisol ND reveals her favorite essential oils that help with growth, dandruff, dry scalp & oily scalp</li>
+    </ul>
+</div>
+</div>
+
+<div  class="testimonial"> 
+    <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> Only 2 treatments in and my hair has <b>so much body</b> and life and <b>looks youthful again!</b> I am loving the results so far! The Dream Hair Kit is quick and easy to do! Love the hair turban, so comfortable to wear, and the pick comb feels good on my scalp too! </p>
+</div>
+
+<div class="threeimg">
+    <div  class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> I love the Dream Hair Kit for my hair. First time using it and it <b>really made a difference.</b> I have long hair and it helped with manageability and softness. Plan to continue to add to my routine. <br>
+        - AB </p>
+    </div>
+    <div class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> The hair towel wrap helps make the oil easy to soak hair without dripping on body, clothes, or bathroom after applying on scalp and ends with wide tooth comb to help spread oil on roots. <br>
+        – MG </p>
+    </div>
+    <!-- <div style="margin-bottom: 50px;" class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br>My new go to hair treatment. <b>Love it!</b> <br>
+        - Debbie R. </p>
+    </div> -->
+</div>
+

@@ -1,0 +1,955 @@
+<style>
+	.Rte h2, .Rte h3, .Rte h1{
+		margin: 0!important;
+	}
+	p,li,a{font-size: 24px!important;}
+	h1{font-size: 40px!important;font-weight: 900;text-transform: capitalize!important;letter-spacing: normal!important;}
+	h2{font-size: 30px!important;text-transform: capitalize!important;letter-spacing: normal!important;}
+	h3{text-transform: capitalize!important;letter-spacing: normal!important;}
+	.strikeThrough{
+		text-decoration:line-through;
+	}
+	#wrapper li{
+		text-align: left;
+	}
+	.points{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		font-size: 20px;
+	}
+	.points img{
+		width: 	75%;
+	}
+	.threepoints{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 100px 0;
+	}
+	.testimonial{
+    	border-radius: 5px;
+    	border: 3px solid #6AB2BD;
+		margin: 100px 0;
+		margin-bottom: 0;
+		text-align: left;
+		background-color: #EAF6F7;
+		padding: 25px;
+		display: flex;
+    	justify-content: space-evenly;
+    	align-items: center;
+	}
+	.testimonial h3{
+		font-weight: 900;
+	}
+	.testimonial img{
+		margin-right: 15px;
+		border-radius: 500px;
+	}
+	.lefttext{
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.lefttext img{
+		width: 30%;
+		border-radius: 280px;
+	}
+	.ltText{
+		width: 60%;
+		text-align: left;
+	}
+	.ltText h2, .rtText h2{
+		font-weight: 900;
+	}
+	.rtText{
+		width: 60%;
+		text-align: right;
+	}
+	.righttext{
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.righttext img{
+		width: 30%;
+		border-radius: 280px;
+	}
+	.ohshitbook{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.text{
+		text-align: left;
+		margin:100px 0;
+	}
+	.rating{
+		border: 3px solid #6ab2bd;
+    	padding: 15px;
+    	background-color: #EAF6F7;
+    	border-radius: 8px;
+		text-align: left;
+		margin: 100px 0;
+	}
+	.rating h3, .testimonial h3{
+		font-weight: 700;
+		margin-top: 0;
+		font-size: 28px!important;
+		color: #143980!important;
+		font-style: italic!important;
+	}
+	.disclaimer{
+		margin-top: 25px;
+		font-size: 16px!important;
+		color: #525252!important;
+		text-align: left;
+	}
+	.rating h2{
+		margin-bottom: 5px;
+		font-size: 30px;
+		color: #FFC63E;
+	}
+
+	.productFeat{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+	.productFeat img{
+		width: 40%;
+	}
+	.productFeat h1{
+		margin: 0;
+	}
+	.productFeat h2{
+		margin: 0;
+	}
+	.productTxt{
+		width: 40%;
+	}
+	.aboutme{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	
+	}
+	.aboutmewrap{
+		background-color:#f9fbfc;
+		padding:15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.aboutTxt{
+		text-align: left;
+	}
+	.kvButton{
+		font-size: 25px!important;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		background-color: #FFC63E;
+		text-decoration: none;
+		color: #231F20;
+		font-weight: 700;
+		border: 2px solid transparent;
+		border-radius: 4px;
+		transition: background-color .3s ease-in;
+		padding: 20px 60px;	
+		letter-spacing: normal!important;
+	}
+	.kvButton p{font-size: 18px!important;}
+	.kvButton i{margin-right: 5px;}
+
+	.bold{
+		font-weight: 900;
+	}
+	.blue{
+		font-weight: 900;
+		color: #143980!important;
+	}
+	.kvButton:hover{
+		color: #fff;
+		background-color:#143980;	
+	}
+	iframe{
+		width:1280px;
+	height:720px;
+	
+	}
+	.divider{
+		width: 90%;
+		border-top: 4px dotted #6AB2BD;
+		margin-bottom: 25px;
+	}
+	.pricebox{
+		width: 80%;
+		display: flex;
+		border: 3px solid #FFC63E;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		text-align: center;
+		padding: 0 5px;
+		padding-bottom: 25px;	
+		margin: 100px auto;
+		background-color: #EAF6F7;
+	}
+	#spacing{
+		text-align: right!important;
+	}
+	#PBTitle{
+		width: calc(100% + 10px);
+		margin-top: 0;
+		background-color: #FFC63E;
+		padding: 2%;
+		color: #454545!important;
+		margin-bottom: 25px;
+	}
+	.pricebox li{
+		list-style-type: none;
+		font-size: 20px!important;
+	}
+	.pricebox h1, .pricebox h2{
+		margin: 0;
+	}
+	.pricebox h2{color: #454545!important;}
+	.big{
+		font-size: 150px!important;
+	}
+	.priceCompare{
+		width: 100%;		
+	}
+	.pricebox ul{
+		padding: 0;
+	}
+	.listItem{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 25px;
+	}
+	.connections{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.connImg{
+		width: 16%;
+		display: flex;
+		justify-content: center;
+	}
+	.connImg img{
+		filter: grayscale(1);
+		transition: filter .5s ease-in-out;
+	}
+	.connImg img:hover{
+		filter: grayscale(0);
+		cursor: pointer;
+	}
+	.buttonIcon{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-right: 25px;
+	}
+	.buttonIcon img{
+		height: 70px;
+		margin: 0;
+		margin-right: 15px;
+	}
+	.Icons{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	.left{
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+	}
+	.left .blue{
+		font-size: 45px!important;
+		margin-right: 15px;
+	}
+	
+
+	@media screen and (min-width:768px) and (max-width:1024px){
+		p,li,a{font-size: 16px!important;}
+		h1{font-size: 22px!important;font-weight: 900;}
+		h2{font-size: 20px!important;}
+		h3{font-size: 18px!important;}
+		.productFeat{
+			flex-direction: column;
+			align-items: center;
+		}
+		.productFeat img{
+			width: 80%;
+		}
+		.productTxt{
+			width: 80%;
+		}
+		.productFeat h3{
+			margin-bottom: 0!important; 
+		}
+
+	}
+	
+	@media screen and (max-width:767px) {
+		p,li,a{font-size: 16px!important;}
+		h1{font-size: 22px!important;font-weight: 900;}
+		h2{font-size: 20px!important;}
+		h3{font-size: 18px!important;}
+		.righttext{
+			flex-direction: column;
+		}
+		.righttext img, .lefttext img{
+			width: 100%;
+		}
+		.lefttext{
+			flex-direction: column-reverse;
+		}
+		.ltText{
+			width: 95%;
+		}
+		.productFeat{
+			flex-direction: column;
+			
+		}
+		.productFeat img{
+			margin: 0;
+			width: 100%;
+		}
+		.productFeat h3{
+			margin: 0;
+		}
+		.productTxt{
+			width: 100%;
+		}
+		.threepoints{
+			margin-top: 25px;
+			flex-direction: column;
+		}
+		.points{
+			width: 100%;
+		}
+		.ohshitbook{
+			flex-direction: column-reverse;
+		}
+		.aboutmewrap svg{
+			display: none;
+		}
+		.aboutmewrap{
+			flex-direction: column;
+		}
+		.aboutmewrap h1, .aboutmewrap img{
+			margin: 0;
+		}
+		iframe{
+			width:310px;
+			height:200px;
+		}
+		.kvButton, .text, .rating{
+			
+	
+			margin-bottom: 25px;
+		}
+		.testimonial{
+			flex-direction: column;
+		}
+		.kvButton{font-size: 14px!important;padding: 15px; margin-top: 15px;}
+		.kvButton p{font-size: 12px!important;}
+		.pricebox{
+			width: 100%;
+		}
+	
+		.listItem{
+			display: block;
+		}
+		.big{
+			font-size: 100px!important;
+		}
+		.Icons{
+			flex-direction: column;
+		}
+		.buttonIcon{margin-bottom: 15px;}
+		.left{flex-direction: column;}
+		#hideonMobile{display: none;}
+		.connImg{width: 40%;}
+	}
+	</style>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2616120775269414');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2616120775269414&amp;ev=PageView&amp;noscript=1"></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<div id="wrapper">
+
+		<h1 class="blue" style="margin: 0;margin-bottom: 15px;">Free Award-Winning Book That Unlocks the Secrets Found in Your Sleep, Stool &amp; Stress Struggles</h1>
+		<hr class="divider">
+		<h2 style="margin: 0;">So you can wake up like feeling new everyday!</h2>
+
+		<div class="connections">
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/CTV.png?v=1616002051" alt=""></div>
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/MarylinShow.png?v=1616189299" alt=""></div>
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/WGBA_2.png?v=1616184226" alt=""></div>
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/bloom.png?v=1616002051" alt=""></div>
+			<div id="hideonMobile" class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/ICNM1.png?v=1616184226" alt=""></div>
+			
+			
+			
+			
+			
+			
+		</div>
+        <div class="klaviyo-form-YqQkNk"></div>
+
+		
+		
+		<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+		<div class="Icons">
+			<div class="buttonIcon">
+				<i class="fas fa-lock" style="font-size: 70px;margin-right: 10px;"></i>
+				<p>Secure Checkout</p>
+			</div>
+
+			<div class="buttonIcon">
+				<img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/MoneyBackIcon.svg?v=1616192281" alt="" style="margin-right: 10px;"><p> Love this book or get your money back</p>
+			</div>
+
+			<div class="buttonIcon">
+				<i class="fas fa-medal" style="font-size: 70px;margin-right: 10px;"></i><p>Award winning!</p>
+</div>
+		</div>
+		
+		<h1 style="margin-top: 25px;margin-bottom: 0;">Don’t Let The Name Of The Book Scare You Off! This Is For You If...</h1> <br>
+		<ul>
+		<li>You are trying to heal your gut, <span class="bold">OR;</span>
+</li>
+		<li>You are a practitioner, health coach or wellness influencer helping others heal their gut</li>
+		</ul>
+		<div class="pricebox">
+			<h1 id="PBTitle">Let Me Show You EVERYTHING You Get When You Order "Oh Sh*t!" Today!
+			</h1>
+			<div class="priceCompare">
+				<ul>
+					<div class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Know your Body’s Secret Code (Just Like Your Doctor Would)</li>
+						</div>
+						<li class="spacing blue">(Value $4,950.00)</li> 
+					</div>
+
+					<div class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Follow a road map that YOU personalize for your very own unique gut healing</li>
+					</div>
+						<li class="spacing blue">(Value $2,295.00)</li> 
+					</div>
+
+					<div style="margin-bottom: 25px;" class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Stay on track with proven gut healing foods, supplements and practices like the Castor Oil Liver Pack.</li>
+						</div>
+						<li id="spacing" class="blue">(Value $1,000.00's)</li> 
+					</div>
+				</ul>
+			</div>
+			<h1 class="blue">Total Value: $8,245.00+</h1>
+			<h2>Get Your Book for</h2>
+			<h1 class="blue big">FREE</h1>
+			<h2>Just cover Shipping and Handling on the book</h2>
+			<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+				<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+			</a>
+
+		</div>
+
+        <iframe id="video" src="https://www.youtube.com/embed/rtdSsqYpl6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> <br>
+
+		<h3 id="about" style="color: #454545;font-size: 30px;">This Is Truly A Limited Offer, There are Only 8,000 books and This is Being Seen by Over 1 Million People, So Claim Your FREE Book Now Before They're All Gone...</h3>
+
+		<div class="aboutmewrap">
+			<img src="https://cdn05.zipify.com/G5VBsVaWqN6jr0yuIZE2QphdUj8=/fit-in/320x0/09aaadc04ee44c649d01d012adb291f5/headshot-2020-02.jpg" alt="">
+			<div class="aboutme">
+
+				<div style="margin-right:15px;">
+					<svg style="fill:#143980; width:50px;" id="quote-mark-left" viewbox="0 0 123.961 123.961"> 
+				<path d="M49.8 29.032c3.1-1.3 4.4-5 3-8l-4.9-10.3c-1.4-2.899-4.8-4.2-7.8-2.899-8.5 3.6-15.8 8.3-21.6 14C11.4 28.532 6.6 36.232 4 44.732c-2.6 8.601-4 20.3-4 35.2v30.7c0 3.3 2.7 6 6 6h39.3c3.3 0 6-2.7 6-6v-39.3c0-3.301-2.7-6-6-6H26.5c.2-10.101 2.6-18.2 7-24.301 3.6-4.898 9-8.898 16.3-11.999zM120.4 29.032c3.1-1.3 4.399-5 3-8l-4.9-10.199c-1.4-2.9-4.8-4.2-7.8-2.9-8.4 3.6-15.601 8.3-21.5 13.9-7.101 6.8-12 14.5-14.601 23-2.6 8.399-3.899 20.1-3.899 35.1v30.7c0 3.3 2.7 6 6 6H116c3.3 0 6-2.7 6-6v-39.3c0-3.301-2.7-6-6-6H97.1c.2-10.101 2.601-18.2 7-24.301 3.6-4.899 9-8.899 16.3-12z"></path> 
+					</svg>
+				</div>
+				<div class="aboutTxt">
+					<h1>A Little Bit About Me:</h1>
+					<p> My name is Dr. Marisol Teijeiro – I’m a Naturopathic Doctor &amp; founder of Queen of the Thrones® line of castor oil products. I've been in clinical practice for over a decade, &amp; early on I noticed that all of my patients (&amp; myself) were having problems with stools, sleep &amp; stress. I realized this was our body's way of communicating with us, like a secret code that we needed to unlock. <br><br>
+					My life's mission is to help people unlock their body's secret code &amp; heal their gut so they can own their purpose &amp; passion in life. I'm the author of the award-winning book, Oh, Sh*t! &amp; I’ve been featured on various TV programs including nationally syndicated shows (Bloom &amp; Daytime) as well as The Marilyn Denis Show in Canada.</p>
+				</div>
+				<div style="align-items: flex-end;display: flex;margin-left:15px;">
+					<svg style="fill:#143980; width:50px;" id="quote-mark-right" viewbox="0 0 975.036 975.036"> 
+					<path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path> 
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="text">
+<h1>Health is a lot More Simple Than You Think</h1>
+		<p>We just have a tendency to overcomplicate it and that’s not your fault! You’ve been told that it’s complicated, and only a certain top few can fix it for you. Sound familiar?<br><br>
+
+		But that’s not true. <span class="bold"> Your body is telling you what is going wrong and what it needs every single day through stools, sleep and stress – it just speaks in a secret code that you had no idea how to unlock...</span> Until now! Knowing these codes is NOT just for doctors, although they've kept it secret for years.</p>
+
+		<h1>I can’t fix You Because You Are Not Broken</h1>
+		<p>After all, you're the one living in your body, it’s you who has to breathe, eat and feel how you feel every single day, why wouldn’t you be the one to know what is going right and what could be going dreadfully wrong? <span class="bold">Others have taken away your power... But this book is your tool to take that power back.</span><br><br>
+
+		<span class="bold">I wrote the award-winning book, Oh, Sh*t!, for people just like you (whether you want to heal your gut, or whether you help others heal their gut).</span> Also because my patients were begging me to get it on paper so they could refresh when necessary <span class="bold">without having to come see me at my clinic</span> and they could be the one to help their friends and family by sharing the benefits. <br><br>
+		This is your user’s manual, your bible to new and improved health. <span class="bold">And I’m giving it to you for free.</span> Why? Well you’ll have to read on to find out. <span class="bold">Are you with me?</span></p>
+</div>
+
+		<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+
+		<div class="rating">
+			<h2>★ ★ ★ ★ ★</h2>
+			<h3>"I love this book and am gifting it to all my clients!"</h3>
+			<p>Great Book! So informative, things to live by to heal your gut, funny, very well written. As a Digestive Health Coach, I love this book and am gifting it to all my clients!</p>
+			<p><span class="bold">– Sue E.</span></p>
+			
+		</div>
+		
+		<hr class="divider">
+
+		<div class="lefttext">
+			<div class="ltText">
+				<h2>My Mom Unlocked Her Body's Secret Code And Inspired This Book</h2>
+				<p><span class="bold">My mom, like you, had a long list of “conditions”</span> that her doctor gave her based on lab tests and physical exams. She had anxiety disorder, dealing with menopause, had thyroid disease and well, she was overweight in part because of it. Does this sound like your story? <br><br>
+				<span class="bold">My mom was always looking outside for the answer to these struggles and never found it – she needed to discover her body's secret code (just like you will with my FREE award-winning book Oh, Sh*t!).</span> Then her doctor gave her a deadly diagnosis of breast cancer due to her years of daily suffering with multiple conditions. She was devastated – I was, too.</p> 
+			</div>
+			<img src="https://cdn05.zipify.com/Y258_vhq5iMetI8rxsmmOKEXinE=/155x176:1219x1240/fit-in/960x0/3fb7f560ad054730910ed4d5b57fe117/mom-baby.png" alt="">
+		</div>
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/6RPq6KwTgqbd-pKu2Jydut4u1Q0=/0x1:3024x3024/fit-in/960x0/5731a26ddeb948a1a76fac02e2f5ae36/img_0782.jpeg" alt="">
+			<div class="ltText">
+				<h2>She Followed A Personalized Road Map To Healing The Gut (Found in Oh, Sh*t!)</h2>
+				<p>She ended up seeing this as a gift that helped her understand she needed to take back her power. She <span class="bold">overcame breast cancer and lived the rest of her life as a whole new person.She had gone from... </span><br><br> </p>
+					<ul>
+						<li><span class="bold">Being severely constipated to going to the bathroom regularly</span></li>
+						<li><span class="bold">Waking up in the middle of the night to finally sleeping peacefully</span></li>
+						<li><span class="bold">Being a bucket of nerves to being calm and in control</span></li>
+					</ul>  
+				<p> All it took was her trusting her body and looking inside for her answers rather than chasing after her labels and conditions and looking outside for the answers.</p>
+			</div>
+			
+		</div>
+		<div class="ohshitbook">
+		
+			<div class="ltText">
+				<h2>Are You Suffering Because No One Is Paying Attention To Your Daily Experience? </h2>
+				<p>You may be getting labs, tests, labels &amp; conditions given to you, but no one is paying attention to what you are really dealing with everyday. <span class="bold">What if I told you that unlocking your body's secret code is as simple as paying more attention to your stools, sleep and stress? You will find the code in my FREE award-winning book, Oh, Sh*t!</span> (Reg. 26.99) <br><br>
+					
+				I remember my mom's suffering with her stools, sleep and stress way before any of her "conditions".  I also remember my own suffering since I was a child before my "conditions". I saw the same pattern in my patients and realized early on that <span class="bold">problems with stools, sleep and stress precede all conditions – and are often overlooked.</span> </p> 
+			</div>
+			<img src="https://cdn05.zipify.com/BnpU5AOWaTIuJI3wVYPfdhIEZwY=/fit-in/960x0/134ba8e0295a401b86f9bd3ecf6c4145/oh-shit-book.png" alt="">
+			
+		</div>
+
+		<div class="text">
+			<h1>Every woman You Know Has Problems With The Same 3 Things – No Matter Their "Condition"</h1>
+			<p> Whether they were labelled with hormone and thyroid problems, arthritis, autoimmune conditions, or cancer – it always came down to their:</p>
+			<ul>
+				<li><span class="blue">STOOLS</span></li>
+				<li><span class="blue">SLEEP</span></li>
+				<li><span class="blue">STRESS</span></li>
+			</ul> <br>
+
+			<p>When your gut is unhealthy, you will notice problems in these 3 areas that come long before you are labelled with your "condition". <span class="bold">This book is different from all the other gut healing books you've read before...</span></p> <br>
+
+			<p>I learned in my clinical practice that <span class="bold">it's not simply about supplements and superfoods...</span> I had to guide my patients to unlock their body's secret code found within their stools, sleep and stress. My FREE gift to you, my award-winning book, <span class="bold">Oh, Sh*t! will liberate you by unlocking your body's secret code and help you follow your own unique and personalized road map–</span> which is often much simpler than anything you've done before! Sound good?</p> 
+		</div>
+		<hr class="divider">
+		
+		<div class="testimonial">
+			<img src="https://cdn05.zipify.com/NeklCKSLEqYFvZHeXz8ji14qDj0=/0x1:808x808/fit-in/320x0/d630af010e2742d4ae6c8e516989471a/unnamed.jpeg" alt="">
+			<div class="testimonialText">
+				<h3>"Dr. Marisol is a naturopathic physician who has made it her mission to help those... regain control over digestive symptoms."</h3>
+				<p>If you have struggled with digestion, please read Dr. Marisol's book, Oh, Sh*t! Yes, the book is lighthearted and comedic - the title makes me laugh just from typing it - but please know that you'll get more than just entertainment. Dr. Marisol is a naturopathic physician who has made it her mission to help those with the most difficult cases of irritable bowel syndrome regain control over digestive symptoms. I respect her work and highly recommend this book.</p>
+				<p><span class="bold">– Dr. Alan Christianson</span>, Bestselling Author</p>
+			</div>
+		</div>
+		<a id="3P" href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+		<h1>If You Feel Stuck, Use These 3 Keys To Unlock Gut Healing!</h1>
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/9pnyH09pi0iHaXaWx7enxi-enWk=/fit-in/960x0/5503b31ec33640b1af6f8bd51b1b9b17/key-1.png" alt="">
+			<div class="ltText">
+				<h2>You Are NOT Your Condition</h2>
+				<p><span class="bold">Simple problems with your stools, sleep and stress create the ideal environment for "REAL BAD conditions" to arise</span> (like thyroid problems, hormonal cancers, arthritis, etc.). <br><br>
+				But good news... Conditions can be changed into new and better things. We must look at how you suffer daily with stools, sleep and stress to unlock your body's secret code. This will reveal what you truly need instead of keeping you caged in your "condition". <br><br>
+				You might be thinking "My Dad died of heart disease and my mom died of cancer... And that is my future, too"... But, it's not! You can choose differently. <span class="bold">You can change your present and future conditions by changing your daily environment right now. Simply unlock the secret code in your stools, sleep and stress once you have your very own award-winning book, Oh, Sh*t! in your hands.</span></p>
+			</div>
+			
+		</div>
+		<div class="lefttext">
+			<div class="ltText">
+				<h2>It’s Not About Having Willpower</h2>
+				<p>You have willpower... It's just that every other method you've tried, or book you've read has given you a one-size-fits-all approach that has forced you to rely on willpower alone in order to succeed... Only to feel frustrated when you fail.  <br><br>
+
+				<span class="bold">What you really need is a more personalized road map that feels natural to your body's specific needs – one that you wake up and choose every morning rather than force yourself into.</span> In my decade of clinical practice, I've learned where people fall off track – Oh, Sh*t! will keep you on track with simple hacks that make you feel good every single day – <span class="bold">the secret to staying motivated.</span> <br><br>
+
+				You might be thinking "It's too late for me", "I'm too old" or "I'm too sick". If you feel like you can't be fixed... It's because you are not broken. It's never too late to transform your life, you just need clear steps that finally work for you and your unique needs.</p> 
+			</div>
+			<img src="https://cdn05.zipify.com/DSTYr77oPTgnNHlRuUg_BT5Apy0=/fit-in/960x0/71533b8054b24fa7a868eda8fbe39538/key-2.png" alt="">
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/0-yoVwyHR6NFzgiHX51rUEadAQA=/fit-in/960x0/739217b873934b398d766f6f4abfce3f/key-3.png" alt="">
+			<div class="ltText">
+				<h2>You Don’t Need To Reinvent The Wheel</h2>
+				<p>Information overload creates confusion and stress for those seeking to heal their gut, with so many options... The FODMAPs Diet, Intermittent Fasting, probiotics, Low-Histamine Diet, Oxalate-Free Diet, restricting gluten and dairy, digestive enzymes... The list goes on (and so do the bills)! <br><br>
+
+				<span class="bold">The reality is, it's not about just ONE thing you do. It's about how you put together all the different pieces in your own unique puzzle.</span>  Make sense of it all with my FREE award-winning book, Oh, Sh*t! (Reg. $26.99)
+					</p>
+<ol>
+						<li>Become aware of the secret code in your stools, sleep and stress patterns </li>
+						<li>Identify where you are right now on your personalized roadmap to healing your gut</li>
+						<li>Do more with less by choosing the right supplements, the right foods and the Castor Oil Pack</li>
+					</ol>
+				<p></p>
+			</div>
+		</div>
+			<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+				<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+			</a>
+		<div class="rating">
+			<h2>★ ★ ★ ★ ★</h2>
+			<h3>"I find myself laughing out loud... I am learning lots"</h3>
+			<p>I am enjoying reading a few pages a day in my sauna. I find myself laughing out loud in my sauna by myself :). Not only that I am learning lots :).</p>
+			<p><span class="bold">– Joann C.</span></p>
+			
+		</div>
+		
+
+		<div class="lefttext">
+			<div class="ltText">
+				<h2>When You’re Struggling Everyday, All You Need Is One Big Win To Help Keep You Going</h2>
+				<p>You might have heard me mention <span class="bold">my favorite health tool the castor oil pack, which is a non-negotiable tool in Oh, Sh*t! for healing the gut.</span> Let me give you a bit of a sneak peek as to why... <br><br>
+				<span class="bold">Remember how problems with stools, sleep and stress create the ideal environment for “real bad conditions?”.</span>  When you’re feeling unwell and frustrated with trying to heal your gut, plus on top of it, you’re suffering daily with these problems, it’s hard to see the light at the end of the tunnel. <br><br>
+				<span class="bold">The Castor Oil Pack helped my mom, myself and thousands of patients with:</span>
+				</p>
+<ul>
+					<li><span class="bold">Go to the bathroom better</span></li>
+					<li><span class="bold">Sleep better</span></li>
+					<li><span class="bold">Stress less</span></li>
+				</ul>
+				<p></p> 
+			</div>
+			<img src="https://cdn05.zipify.com/dffQbfFMj5fp5p01PwRSXn8W-ko=/100x1:700x600/fit-in/960x0/937ee74bf89f48778cb238de6332ca69/marisol-mom-young.jpeg" alt="">
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/iyUmEIcmie-FzrEYbiYdKDq80gY=/345x1:800x454/fit-in/960x0/c4369e11910e4d71a8ceac65bafabf15/marisol-family-portrait.jpeg" alt="">
+			<div class="ltText">
+				<h2>How Do You Stay Motivated To Heal Your Gut When You Don’t Feel Good? </h2>
+				<p><span class="bold">Anytime you’ve faltered on a health plan it’s because you didn’t have something each day that motivated you to keep going</span> – not because you don't have willpower. Positive reinforcement is everything. How do you positively reinforce? You do things that make you FEEL BETTER.  <br><br>
+
+				Under regular circumstances, to heal the gut you would need to take mountains of supplements, completely restrict your diet for months, go to multiple practitioners for acupuncture or massage, and who knows how many other woo-woo things that cost you time and money. <br><br>
+
+				I didn’t want that added level of stress for my mom, myself or my patients.
+				</p> 
+			</div>
+			
+		</div>
+
+		<div class="lefttext">
+			
+			<div class="ltText">
+				<h2>I Knew Only ONE Thing That Could Motivate and Reset Stools, Sleep And Stress Rapidly.</h2>
+				<p>The Castor Oil Pack saved my life when I was in naturopathic college, and when my mom was diagnosed with cancer it was the first thing I thought of. <span class="bold">I knew if I could get my mom one big easy win she would FEEL BETTER… And that's all the motivation anyone would need to move forward!</span></p>
+			</div>
+			<img src="https://cdn05.zipify.com/HCuykrOVJgY2pHGcdzGRg35GaBU=/999x1:5000x4000/fit-in/960x0/a1ab24f812e9424aa5055f1531c1f53a/img_9380.jpg" alt="">
+		</div>
+		<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+
+		<div class="rating">
+			<h2>★ ★ ★ ★ ★</h2>
+			<h3>"I have noticed a huge difference in the way I sleep, my bowel movement, and just a general greater feeling of well being."</h3>
+			<p>I have been wearing my castor oil pack for the past week and I have noticed a huge difference in the way I sleep, my bowel movement, and just a general greater feeling of well being. It's a new nightly routine for me!</p>
+			<p><span class="bold">– Allison S.</span></p>
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/6x6gLTwNkg4bmJt9MOHBxYKEov8=/100x1:700x600/fit-in/960x0/6984d0fc8fb34b66b12d093854443bc8/marisol-mom-kids.jpeg" alt="">
+
+			
+
+			<div class="ltText">
+				<h2>The Castor Oil Pack Became My Mom's Miracle Wrap</h2>
+				<p><span class="bold">In just a few days, my mom, who had over 66 years of bathroom problems, horrible sleep and extreme stress, experienced true gut healing:</span></p>
+					<ul>
+						<li>She was pooping without obsessing over it</li>
+						<li>She could finally sleep through the night</li>
+						<li>She woke up feeling refreshed</li>
+						<li>She was no longer wanting to eat everything in the kitchen cupboards</li>
+						<li>She started to feel like life was easy; not a massive chore that led to nothing</li>
+						<li>Her stress had all but evaporated</li>
+						
+					</ul> <br>
+					<p><span class="bold">This Castor Oil Pack was the ONE THING that positively reinforced her motivation for transformation.</span> <br><br> 
+					Maybe you’ve heard of it or tried it? It’s an ancient technique that was a real hassle before, but I share the easy, less-mess way to work with this ancient tool <span class="bold">in your FREE book, Oh, Sh*t!</span> because <span class="bold">it is the first, most important thing to do when you want to heal your gut with ease.</span>
+				</p> 
+			</div>
+			
+		</div>
+
+		<div class="lefttext">
+			<div class="ltText">
+				<h2>You Can’t Turn Back Time But You Can Change Your Daily Experience For The Better</h2>
+				<p>Just as Oh, Sh*t! was going to print, <span class="bold">my mother passed away at a ripe old age having survived 11 years past her breast cancer diagnosis and she got to indulge during those years because she had very little suffering in her stools, sleep and stress.</span> This is something she really hadn’t experienced in her previous 66 years of life.  <br><br>
+				You may be thinking “She probably did everything perfect. After all, she was the mother of a naturopath!” Wrong! I can tell you she definitely wasn’t perfect! But <span class="bold">she was following the roadmap in Oh, Sh*t! which became her gut healing bible, and was religious with her Castor Oil Pack.</span>
+				</p> 
+			</div>
+			<img src="https://cdn.shopify.com/s/files/1/0080/1846/0757/files/Marisol-mom-dadCompressed_1.jpg?v=1617629095" alt="">
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/QhHYjRoHPjrGjIrTzGzuKfnjlbM=/375x1:2625x2250/fit-in/960x0/50d4d91cd8d2473d8aeabee5c418b282/softcover-back-open.jpeg" alt="">
+			<div class="ltText">
+				<h2>Why Am I Giving This Book Away For FREE?</h2>
+				<p><span class="bold">My mother’s final words inspired me, "Help them like you helped me. They don't know what to do just like I didn't."</span> So in her honour, I’m gifting it to you so that I can help others the same way I helped her in her last 11 years of life. <br><br>
+				There are no strings attached to this offer, I’ve taken care of the price of the book that you could buy on amazon for $26.99, but <span class="bold">all I ask is that you cover the shipping to get it to your front door.</span>  Act now, there are only 8,000 books available and this is being sent to 1 million people.
+				</p> 
+			</div>
+			
+		</div>
+
+		<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+
+		<div class="testimonial">
+			<img src="https://cdn05.zipify.com/nhwzzlxhn_rv9b2kytHZsOvH3p4=/147x11:430x294/fit-in/320x0/650cbf4d4c7c448ab080aed5fd70668b/hp-sect7-img2-a.jpeg" alt="">
+			<div class="testimonialText">
+				<h3>"Say goodbye to the bloat and an irritable bowel and hello to a beautiful flat belly."</h3>
+				<p>Say goodbye to the bloat and an irritable bowel and hello to a beautiful flat belly. Dr. Marisol’s book, Oh, Sh*t! is easy to digest and full of royal gems that transform your digestion from stressed to blessed. It’s a delicious and inspiring read that will keep you coming back for seconds.</p>
+				<p><span class="bold">– JJ Virgin</span>, New York Times Bestselling Author of The Virgin Diet</p>
+			</div>
+		</div>
+
+		<div class="lefttext">
+			<div class="ltText">
+				<h2>You Have a Choice – Choose Gut Healing</h2>
+				<p><span class="bold">Oh, Sh*t! is simply a guide to understand your body’s secret code, with small little moves that you make on the daily that don’t take much time but totally transform you</span> – not at the end of the game, when you go in for that last Hail Mary – but right now, when a seed is planted for your best health in the future. <br><br>
+				You are at a crossroads and YOU HAVE A CHOICE. <span class="bold">You can choose to stay stuck where you’re at, or you can choose to create a life without suffering.</span>
+				</p> 
+			</div>
+			<img src="https://cdn05.zipify.com/5i7cCbhl7VzljulZ4udRi5mrR_k=/0x1:3024x3024/fit-in/960x0/6238c44db0374418a1bbc5b296923c7b/couple-img.jpeg" alt="">
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/dd6sD9qqNM4BU3FWNMVFEnn_4-Q=/292x1:1844x1551/fit-in/960x0/095359f78c094504a8f74ca6075e205d/screen-shot-2021-02-03-at-1-03-27-pm.png" alt="">
+			<div class="ltText">
+				<h2>There Are Only 8,000 Books Available And This Will Be Offered To 1 Million People.</h2>
+				<p><span class="bold">My patients begged me to write Oh, Sh*t! as a resource they could come back to everyday and share with their friends and family</span> who couldn’t necessarily come and be a patient of mine. If every patient came to me already doing these things, it would make both of our jobs so much quicker and easier. <br><br>
+
+				<span class="bold">Oh, Sh*t! is packed with super relatable stories, naturopathic health pearls you won’t find anywhere else and quizzes and assessments to help you get to know yourself.</span>
+				</p> 
+			</div>
+			
+		</div>
+
+		<div class="rating">
+			<h2>★ ★ ★ ★ ★</h2>
+			<h3>"If you have ever thought to yourself 'I need to heal my gut', this book is for you!"</h3>
+			<p>As a holistic practitioner, I know how important digestion is to your overall health and wellness. If you have ever thought to yourself 'I need to heal my gut', this book is for you! I love how relatable Dr. Marisol ND is and how she outlines an easy step-by-step program to resetting your gut and inspiring you to feel your best. This is my second Book so I have one for at home and at the office.</p>
+			<p><span class="bold">– Terri R.</span></p>
+		</div>
+
+		
+		<div class="pricebox">
+			<h1 id="PBTitle">Let Me Show You EVERYTHING You Get When You Order "Oh Sh*t!" Today!
+			</h1>
+			<div class="priceCompare">
+				<ul>
+					<div class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Know your Body’s Secret Code (Just Like Your Doctor Would)</li>
+						</div>
+						<li class="spacing blue">(Value $4,950.00)</li> 
+					</div>
+
+					<div class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Follow a road map that YOU personalize for your very own unique gut healing</li>
+					</div>
+						<li class="spacing blue">(Value $2,295.00)</li> 
+					</div>
+
+					<div style="margin-bottom: 25px;" class="listItem">
+						<div class="left">
+							<li class="blue">✓</li>
+							<li style="max-width: 800px;">Stay on track with proven gut healing foods, supplements and practices like the Castor Oil Liver Pack.</li>
+						</div>
+						<li class="spacing blue">(Value $1,000.00's)</li> 
+					</div>
+				</ul>
+			</div>
+			<h1 class="blue">Total Value: $8,245.00+</h1>
+			<h2>Get Your Book for</h2>
+			<h1 class="blue big">FREE</h1>
+			<h2>Just cover Shipping and Handling on the book</h2>
+			<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+				<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+			</a>
+
+		</div>
+	
+
+		<div class="threepoints">
+			<div class="points">
+				<img src="https://cdn05.zipify.com/-AkGx6ppKS3YHQ5jC_P-nIdDSZo=/fit-in/1030x0/e57707c3cdce4f62a2a9c1c08c25b52e/unlock-code.png" alt="">
+				<p><span class="blue">Unlock your body’s secret code in your stools, sleep &amp; stress</span> patterns so you can make sense of what is going on in your body (Saving you over $4,495!).</p>
+			</div>
+			<div class="points">
+				<img src="https://cdn05.zipify.com/kd1dfqwO64g003xxHJBBVgGdi00=/fit-in/1030x0/1d5d58945e9749caacf5eee3a4a1b819/raod-map.png" alt="">
+				<p><span class="blue">Follow a road map that you personalize for gut healing</span> so you can leave behind your daily struggles and get on with your life! (A personalized plan with a practitioner would cost you over $2,295+!)</p>
+			</div>
+			<div class="points">
+				<img src="https://cdn05.zipify.com/pDPwX03tdayVjBSBlmH-a9Mo6M0=/fit-in/1030x0/f18f2c2e76194fd799f7fb3993bae7c6/more-with-less.png" alt="">
+				<p><span class="blue">Simplify your life with proven tools like the Castor Oil Pack</span> at the RIGHT time, so you can do more with less. (Saving you $1,000.00's!)</p>
+			</div>
+		</div>
+
+		<div class="testimonial">
+			<img src="https://cdn05.zipify.com/zMQvWWzQ-2eS2X6Ms43IY7hBgnU=/297x1:779x481/fit-in/320x0/8223c7b2d4874efba0a24d03382a0d3e/hb-about-img-1140x800_05.jpeg" alt="">
+			<div class="testimonialText">
+				<h3>"Understand what your stool is telling you about your digestion - the epicenter of your health."</h3>
+				<p>If the poop grosses you out, get over yourself; read the book to understand what your stool is telling you about your digestion - the epicenter of your health. Dr. Marisol does a fantastic job in making poop a relatable, funny and easily digestible topic, with solid action plans how to fix it. A must-read.</p>
+				<p><span class="bold">– Magdalena Wszelaki</span>, Hormone &amp; Nutrition Expert</p>
+			</div>
+		</div>
+
+		<div class="ohshitbook">
+		
+			<div class="ltText">
+				<h2>Save Thousands Of Dollars And Your Precious Time With Oh, Sh*t! In Your Hands </h2>
+				<p>Oh, Sh*t! is the system that I’ve created for my patients, inspired by my mother’s example. Just like my mother, <span class="bold">when you unlock your body's secret code, follow your personalized road map and simplify your lifestyle, you will finally reap the benefits of gut healing.</span> <br><br>
+				This would normally take you months with a naturopathic doctor, costing you thousands of dollars. <span class="bold">It's all packaged here for you in simple and actionable steps in my FREE award-winning book, Oh, Sh*t!</span> (Reg. $26.99). </p> 
+			</div>
+			<img src="https://cdn05.zipify.com/BnpU5AOWaTIuJI3wVYPfdhIEZwY=/fit-in/960x0/134ba8e0295a401b86f9bd3ecf6c4145/oh-shit-book.png" alt="">
+			
+		</div>
+
+		<div class="righttext">
+			<img src="https://cdn05.zipify.com/kViJkZ_nyKHbFu5ssmkaYVdjUK8=/fit-in/960x0/9d47310f7e8f438881c171c4a83a464a/lao-quote-update.jpeg" alt="">
+			<div class="ltText">
+				<h2>Gut Healing Starts With A Single Step</h2>
+				<p>All you have left to do is make your choice – <span class="bold">unlock your body's secret code, follow your personalized road map and simplify your lifestyle COMPLETELY RISK FREE with your free award-winning book, Oh, Sh*t!</span>  <br><br>
+				This is only available for a very limited time while quantities last. I only have 8000 books available and more than 1 million people are seeing this. <span class="bold">You've waited long enough – start healing your gut NOW!</span><br> *always talk to your doctor first
+				</p> 
+			</div>
+			
+		</div>
+
+		<a href="#popup" class="kvButton Button"> <i class="fas fa-shopping-cart"></i>Yes, Reserve my free book now! <br>
+			<p>Reg <span class="strikeThrough">$26.99</span> Just cover $9.99 for shipping and handling.</p>
+		</a>
+		<div class="Icons">
+			<div class="buttonIcon">
+				<i class="fas fa-lock" style="font-size: 70px;margin-right: 10px;"></i>
+				<p>Secure Checkout</p>
+			</div>
+
+			<div class="buttonIcon">
+				<img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/MoneyBackIcon.svg?v=1616192281" alt="" style="margin-right: 10px;"><p> Love this book or get your money back</p>
+			</div>
+
+			<div class="buttonIcon">
+				<i class="fas fa-medal" style="font-size: 70px;margin-right: 10px;"></i><p>Award winning!</p>
+</div>
+		</div>
+		
+
+
+
+		
+
+		<div class="testimonial">
+			<img src="https://cdn05.zipify.com/z4xZwwcwvKq6m2NMzt4gepfs5gY=/209x51:740x582/fit-in/320x0/2606e9bd3cdc416e916a697e64e7532e/robyn-reading-2-reupload.jpeg" alt="">
+			<div class="testimonialText">
+				<h3>"You won’t be able to put it down!"</h3>
+				<p>Dr. Marisol takes the taboo subject of toilet troubles and delivers the science and solutions for those with IBS. She makes it fun, approachable and totally surmountable! You won’t be able to put it down!</p>
+				<p> <span class="bold"> – Robyn Openshaw</span>, Bestselling Author</p>
+			</div>
+		</div>
+
+		<div class="connections">
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/CCNM.png?v=1616002051" alt=""></div>
+			
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/NYANP.png?v=1616002051" alt=""></div>
+		
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/CAND.png?v=1616002051" alt=""></div>
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/WFLA.png?v=1616002051" alt=""></div>
+		
+			<div class="connImg"><img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/CHFA.png?v=1616002051" alt=""></div>
+		</div>
+		
+		
+
+
+
+			
+		</div>
+		<script>
+			
+			buttons = document.querySelectorAll('.kvButton');
+
+function popup() {
+    if (window.location.hash === "#popup") {
+		
+        location.reload();
+
+    } 
+}
+    
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', popup, false);
+    }
+
+				
+
+
+		</script>

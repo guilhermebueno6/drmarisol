@@ -1,0 +1,23 @@
+<script>
+    var myVar = window.onload(setTimeout(function(){
+        var newcontent = document.createElement('img');
+        document.querySelector(".cSghwA").prepend(newcontent);
+        newcontent.src = "https://cdn.shopify.com/s/files/1/0092/0541/6032/files/Overlay_1-castor-oil-plant-ricinus-communis-leaf-michael-clutsonscience-photo-library.jpg?v=1622051739";
+        newcontent.classList.add("formimg");
+    }, 5000));
+    </script>
+    <style>
+    .cSghwA{
+        border-radius: 0 10px 10px 0;
+    }
+    .formimg{
+        margin-top: 0!important;
+        height: 650px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    @media screen and (max-width:768px){
+        .formimg{
+            display: none;
+        }
+    } 
+    </style>

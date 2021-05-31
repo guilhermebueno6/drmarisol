@@ -1,0 +1,592 @@
+<style>
+    
+      
+    .Button{
+          background-color: #eebe34!important;
+          text-align: center!important;
+          margin: 0 auto!important;
+          transition: all .5s ease-in;
+          font-size: 25px!important;
+          font-weight: 700!important;
+          padding: 25px;
+          margin-bottom: 15px;
+          border-radius: 15px;
+      }
+      .disclaimer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      }
+      .Button:hover{
+          background-color: #143980!important;
+          color: white;
+      }
+      .Buttoninv{
+          background-color: #143980!important;
+          text-align: center!important;
+          margin: 0 auto!important;
+          transition: all .5s ease-in;
+          font-size: 25px!important;
+          font-weight: 700!important;
+          padding: 25px;
+          margin-bottom: 15px!important;
+          border-radius: 15px;
+          color: white;
+      }
+      .Buttoninv:hover{
+          background-color: #eebe34!important;
+          color: black;
+      }
+      
+      #clockdiv{
+          font-family: sans-serif;
+          color: #143980;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          font-weight: 900;
+          text-align: center;
+          font-size: 50px;
+          margin: 0 auto;
+      }
+      
+      #clockdiv > div{
+          padding: 10px;
+          border-radius: 3px;
+          display: inline-block;
+      }
+    
+      
+      #clockdiv div > span{
+          padding: 15px;
+          border-radius: 3px;
+          background: #EAF6F7;
+          display: inline-block;
+      }
+      
+      .smalltext{
+          margin-top: 0!important;
+          color: #231F20!important;
+          padding-top: 5px;
+          font-size: 16px;
+      }
+      #offers{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-top: 100px;
+          margin-bottom: 100px;
+      }
+      .line:nth-child(2n){
+        
+        margin: 0 15px;
+      }
+      .line h2{
+        margin-top: 25px!important;
+        color: #143980!important;
+      }
+      .offer1,.offer3{
+        border: 3px solid #143980;
+        border-radius: 25px;
+        
+      }
+      .topOffer:not(:nth-child(2n)) h1{
+        margin-top: 70px!important;
+      }
+      .offer2{
+        border: 10px solid #FFC63E;
+        border-radius: 25px;
+        box-shadow: 0px 0px 50px 6px rgba(35,31,32,0.36);
+      }
+      .offer1, .offer2, .offer3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .offer1 .Button, .offer2 .Button, .offer3 .Button{
+        margin: 0!important;
+        width: 100%!important;
+      }
+      .line img{
+        max-width: 100%;
+      }
+      .fa-check{
+        color: #01a301;
+      }
+      .fa-times{
+        color: #FF0000;
+      }
+      .line ul{
+        list-style: none;
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px 25px!important;
+        margin: 0!important;
+      }
+      .border{
+        background-color: #EAF6F7;
+        border-top: 3px solid #143980;
+        border-bottom: 3px solid #143980;
+      }
+      .fas{
+        font-size: 30px!important;
+      }
+      .fa-circle{
+        font-size: 10px!important;
+        color: black;
+      }
+      .fa-star{
+        transform: rotateZ(11deg) translateY(8px)!important;
+      }
+      .goldstar{
+        color: #FFC63E;
+      }
+      .silverstar{
+        color: #C0C0C0;
+      }
+      .bronzestar{
+        color: #cd7f32;
+      }
+      .buy{
+        background-color: #EAF6F7;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        width: 100%;
+        
+      }
+      .regular{
+        color:  #FF0000;
+        font-size: 20px;
+        margin: 0!important;
+  
+      }
+      .price{
+        color: #6AB2BD;
+        font-size: 60px;
+        margin: 0!important;
+  
+      }
+      .save{
+        color: #01a301;
+        font-size: 25px;
+        margin: 0!important;
+        margin-bottom: 25px!important;
+      }
+      .line h1{
+        font-size: 30px!important;
+      }
+      .bottomlink{
+        padding: 15px;
+        color: #143980!important;
+        font-size: 30px!important;
+        font-weight: 900!important;
+        margin-top: 50px!important;
+      }
+      #topoffer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 250px;
+        
+      } 
+      #topoffer ul{
+        list-style-type: none;
+        text-align: left;
+        width: 100%;
+        margin: 0!important;
+        font-size: 20px!important;
+        padding: 0 15px;
+      }
+      #topoffer h2{
+        color: #143980;
+        margin: 15px!important;
+      }
+      #topoffer .topOffer{
+        max-width: 32%;
+      }
+      .topOffer .offer1,.topOffer .offer2,.topOffer .offer3{
+        background-color: #EAF6F7;
+        height: 100%;
+      }
+     
+      th{
+        text-align: center!important;
+      }
+      tbody th{
+        border-right: 1px solid #e3e3e3;
+        }
+      tbody tr:nth-child(odd){
+        background-color: #f5f5f5;
+      }
+      thead{
+        background-color: #eaf6f7;
+        font-size: 20px;
+        color: #143980!important;
+      }
+      table{
+        border: 1px solid #e3e3e3;
+        margin-bottom: 100px;
+      }
+      tr th:nth-child(3n){
+        border-left: 3px solid #143980;
+        border-right: 3px solid #143980;
+      }
+      thead tr th:nth-child(3n){
+        border-top: 3px solid #143980;
+      }
+      tbody tr:last-child th:nth-child(3n){
+        border-bottom: 3px solid #143980;
+      }
+      .divider{
+        padding-top: 250px!important;
+        border-top: 4px solid #143980; 
+        color: #143980!important; 
+        font-size: 30px!important;
+      }
+      .strikethrough{
+        text-decoration: line-through;
+      }
+      #hourG{
+        margin: 0!important;  
+        width: 100%;
+      }
+      .popup{
+        /* display: none; */
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+      }
+      .sub{
+        color: #143990;
+        font-size: 25px!important;
+      }
+      @media screen and (max-width:1024px) {
+        h1{
+          font-size: 25px!important;
+        }
+        .sub{
+          font-size: 20px!important;
+        }
+        #topoffer .topOffer{
+          max-width: 100%;
+        }
+        #topoffer{
+          flex-direction: column;
+        }
+        thead, tbody{
+          font-size: 15px;
+        }
+        table{
+          display: none;
+        }
+        .divider{
+          
+          display: none;
+        }
+        #topoffer{
+          margin-bottom: 100px;
+        }
+        .Button{
+          z-index: 0!important;
+        }
+        .disclaimer img{
+              width: 40%;
+          }
+          .disclaimer{flex-direction: column; align-items: center;}
+          .disclaimer img{width: 100%;}
+        .bottomlink {
+  
+          border: 0!important;
+          font-size: 20px!important;
+        }
+        
+        .smalltext{
+          font-size: 15px!important;
+        }
+        
+        .topOffer:nth-child(2n){
+          margin-top: 70px!important;
+        }
+        #hourG{
+          margin-top: 2.4em!important;
+        }
+  
+      }
+      /* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700;800&display=swap');
+      body,div,section,ul,li,h1,h2,p,mark,table,th,tr,thead,tbody,a{
+        font-family: 'Baloo 2', sans-serif!important;
+      } */
+    
+      </style>
+  
+        
+  <h1 style="color: #143980!important;font-size: 30px;border-bottom: 4px solid#FFC63E;padding-bottom: 25px; margin-top: 0!important;">CHOOSE  TO  UPGRADE  YOUR  FREE  EGUIDE  WITH LIMITED TIME SAVINGS ON THESE EXCLUSIVE BONUSES:<br>
+    </h1>
+    <h1><span class="sub">*ONLY WANT YOUR FREE EGUIDE? SCROLL DOWN TO THE BOTTOM OF THE PAGE!*</span></h1>
+    <div id="clockdiv">
+      <div style="display: none;">
+        <span class="days"></span>
+        <h1 class="smalltext">DAYS</h1>
+        
+      </div>
+      <div>
+        <span class="hours"></span>
+        <h1 class="smalltext">HOURS</h1>
+        
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <h1 class="smalltext">MINUTES</h1>
+      
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <h1 class="smalltext">SECONDS</h1>
+      
+    </div>
+  </div>
+  
+  
+  
+  <section id="topoffer">
+  
+    <div class="topOffer">
+      <h1>
+        <i class="fas fa-medal bronzestar"></i>
+        </h1>
+        <div class="offer1">
+          <h2>DREAM HAIR KIT<br> 
+            <span class="regular">Regular <span class="strikethrough">$59.97</span></span> <br>
+            <span class="save" style="color: #6AB2BD!important;">$50.97 + SHIPPING </span> 
+            <br>(<span style="color: #01a301!important;">  SAVE 15% </span>)</h2>
+            <a href="https://queenofthethrones.myshopify.com/cart/39847409680546:1?channel=buy_button" class="Button Buttoninv">upgrade now!</a>
+             <img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/Offer_Images12.png?v=1620927486" alt="">
+              <ul class="border">
+                <li>
+  <i class="fas fa-circle"></i> Organic Cotton Hair Wrap </li>
+                <li>
+  <i class="fas fa-circle"></i>  Stainless Steel Hair Pick</li>
+                <li>
+  <i class="fas fa-circle"></i> Organic Cosmetic Castor Oil (3.38 oz)</li>
+              </ul>
+              <h2> 
+                <span class="regular">Regular <span class="strikethrough">$59.97</span></span> <br>
+                <span class="save" style="color: #6AB2BD!important;">$50.97 + SHIPPING </span> 
+                <br>(<span style="color: #01a301!important;">  SAVE 15% </span>)</h2>
+              <a href="https://queenofthethrones.myshopify.com/cart/39847409680546:1?channel=buy_button" class="Button Buttoninv">upgrade now!</a>
+              
+    </div>
+    </div>
+  
+    <div id="top" class="topOffer">
+      <h1 style="margin-top: 0!important;">
+        <i class="fas fa-medal goldstar"></i> BEST CHOICE <i class="fas fa-medal goldstar"></i>
+  </h1>
+      <div class="offer2">
+        <h2> <mark>Elite Hair, Hormones, Brow & Lash Kit</mark> <br>
+                
+          <span class="regular">Regular <span class="strikethrough">$239.88</span></span><br>
+          <span class="save" style="color: #6AB2BD!important;">$167.62 (FREE SHIPPING) </span> <br>
+          (<span style="color: #01a301!important;">  SAVE 25% </span>)</h2>
+        <a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button" class="Button">upgrade now!</a>
+         
+        <img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/Offer_Images1.png?v=1620927485" alt="">
+        <ul class="border">
+          <li>
+  <i class="fas fa-circle"></i>  Organic Cotton Hair Wrap</li>
+          <li>
+  <i class="fas fa-circle"></i> Stainless Steel Hair Pick</li>
+          <li>
+  <i class="fas fa-circle"></i> 2x Organic Cosmetic Castor Oil (3.38 oz)</li>
+          <li>
+  <i class="fas fa-circle"></i>  Organic Cotton Castor Oil Pack </li>
+          <li>
+  <i class="fas fa-circle"></i>  Organic Castor Oil (16.9 oz)</li>
+  <i class="fas fa-circle"></i>  Organic Cotton Sleep Hygiene Mask</li>
+  <i class="fas fa-circle"></i>  Double Ended Brow & Lash  Applicator Brush</li>
+
+        </ul>
+      <div class="buy">
+        <h2>              
+          <span class="regular">Regular <span class="strikethrough">$239.88</span></span><br>
+          <span class="save" style="color: #6AB2BD!important;">$167.62 (FREE SHIPPING) </span> <br>
+          (<span style="color: #01a301!important;">  SAVE 25% </span>)</h2>
+      <a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button"  class="Button">upgrade now!</a>
+    </div>
+        </div>
+        </div>
+      
+  
+  
+    <div class="topOffer">
+      <h1>
+        <i class="fas fa-medal silverstar"></i>
+        </h1>
+      <div class="offer3">
+        <h2>DREAM HAIR & HAPPY HORMONES KIT<br>
+    
+          <span class="regular">Regular <span class="strikethrough">$119.94</span></span><br>
+          <span class="save" style="color: #6AB2BD!important;">$101.95 (FREE SHIPPING)</span> <br>
+          (<span style="color: #01a301!important;"> SAVE 15% </span>)
+        
+        </h2>
+        <a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button" class="Button Buttoninv">upgrade now!</a>
+        <img src="https://cdn.shopify.com/s/files/1/0092/0541/6032/files/Offer_Images3.png?v=1620927486" alt="">
+        <ul class="border">
+          <li>
+  <i class="fas fa-circle"></i> Organic Cotton Hair Wrap</li>
+          <li>
+  <i class="fas fa-circle"></i> Stainless Steel Hair Pick</li>
+          <li>
+  <i class="fas fa-circle"></i> Organic Cosmetic Castor Oil (3.38 oz)</li>
+          <li>
+  <i class="fas fa-circle"></i> Organic Cotton Castor Oil Pack</li>
+  <li> <i class="fas fa-circle"></i> Organic Castor Oil (16.9 oz)</li>
+        </ul>
+      
+  
+        <h2>  
+          <span class="regular">Regular <span class="strikethrough">$119.94</span></span><br>
+          <span class="save" style="color: #6AB2BD!important;">$101.95 (FREE SHIPPING)</span> <br>
+          (<span style="color: #01a301!important;"> SAVE 15% </span>)
+        </h2>
+      <a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button" class="Button Buttoninv">upgrade now!</a>
+    </div>
+    </div>
+    
+    
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <h1 class="divider">Here's how you'll benefit:</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>WHAT YOU'LL GET</th>
+        <th><i class="fas fa-medal bronzestar"></i></th>
+        <th><i class="fas fa-medal goldstar"></i><i class="fas fa-medal goldstar"></i><i class="fas fa-medal goldstar"></i>
+  </th>
+        <th><i class="fas fa-medal silverstar"></i><i class="fas fa-medal silverstar"></i></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>REDUCE HAIR LOSS & ENCOURAGE GROWTH</th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+        <th>SLOW DOWN GREYING HAIR</th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+        <th>SOOTHE ITCHY/DRY SCALP</th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+        <th>NOURISH DRY, DAMAGED HAIR</th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+      </tr>
+        <tr>
+  <th>BETTER STOOLS</th>
+        <th><i class="fas fa-times"></i></th>
+        <th><i class="fas fa-check"></i></th>
+        <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+          <th>DEEPER SLEEP</th>
+          <th><i class="fas fa-times"></i></th>
+          <th><i class="fas fa-check"></i></th>
+          <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+          <th>LESS STRESS</th>
+          <th><i class="fas fa-times"></i></th>
+          <th><i class="fas fa-check"></i></th>
+          <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+          <th>HORMONE BALANCING</th>
+          <th><i class="fas fa-times"></i></th>
+          <th><i class="fas fa-check"></i></th>
+          <th><i class="fas fa-check"></i></th>
+      </tr>
+      <tr>
+          <th>DOUBLE THE LOVE TO SHARE WITH A FRIEND</th>
+          <th><i class="fas fa-times"></i></th>
+          <th><i class="fas fa-check"></i></th>
+          <th><i class="fas fa-times"></i></th>
+      </tr>
+      <tr>
+        <th>Price:</th>
+        <th><a href="https://queenofthethrones.myshopify.com/cart/39847409680546:1?channel=buy_button" style="margin-bottom: 0!important;" class="Button Buttoninv">upgrade now!<br>$50.97 + SHIPPING<br>Reg <span class="strikethrough">$59.97</span></a></th>
+        <th><a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button" style="width: 100%;" class="Button">upgrade now!<br>$167.62 (FREE SHIPPING)<br>Reg <span class="strikethrough">$239.88</span></a></th>
+        <th><a href="https://queenofthethrones.myshopify.com/cart/39847506837666:1?channel=buy_button" style="margin-bottom: 0!important;" class="Button Buttoninv">upgrade now!<br>$101.95 (FREE SHIPPING)<br>Reg <span class="strikethrough">$119.94</span></a></th>
+      </tr>
+    </tbody>
+  </table>
+  
+  <a id="last" href="https://shopdrmarisol.com/pages/dream-hair-kit-thank-you-page" class="bottomlink">No thanks, I don't want to upgrade to the full experience, I'll just take my FREE EGUIDE!</a>
+  <br><br>
+  
+  
+  
+  <script>
+    function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+    };
+    }
+    
+    function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+    
+    function updateClock() {
+    var t = getTimeRemaining(endtime);
+    
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    
+    if (t.total <= 0) {
+    clearInterval(timeinterval);
+    }
+    }
+    
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+    }
+    
+    var deadline = new Date(Date.parse(new Date()) + 1 * 1 * 60 * 60 * 1000);
+    initializeClock('clockdiv', deadline);
+    </script> 

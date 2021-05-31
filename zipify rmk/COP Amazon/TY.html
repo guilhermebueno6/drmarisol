@@ -1,0 +1,289 @@
+<style>
+    p,li{font-size: 22px!important;}
+    li{list-style-type: decimal!important;}
+    li{list-style: none;}
+    h1{
+        font-size: 45px!important;
+    }
+    .SectionHeader__Heading{
+        display: none!important;
+    }
+    .references{font-size: 18px!important;}
+    .headings{font-size: 25px!important; text-align: center; margin: 0!important;}
+    .imgLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 75px;
+    }
+    .mobile{
+        display: none!important;
+    }
+    .imgRight{
+    clear: both;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 75px;
+    }
+    .imgRight img{
+    width: 30%;
+    margin: 0;
+    margin-left: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0, 0.7));
+    }
+    .imgLeft img{
+    width: 30%;
+    margin: 0;
+    margin-right: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0, 0.7));
+    }
+    .ILText{
+    text-align: left;
+    }
+    .ILText h3{
+    font-size: 25px!important;
+    }
+    .bigN{
+    font-size: 50px!important;
+    margin-right: 5px;
+    }
+    .disclaimer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    }
+    .bold{font-weight: 900!important;}
+    .Button{
+    background-color: #eebe34!important;
+    text-align: center!important;
+    margin: 0 auto!important;
+    transition: all .5s ease-in;
+    font-size: 25px!important;
+    font-weight: 700!important;
+    padding: 25px;
+    }
+    .Button:hover{
+    background-color: #143980!important;
+    color: white;
+    }
+    .buttonAlign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .line{
+    width: 60%;
+    border: 1px solid #6AB2BD;
+    }
+    .bigLine{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -50px;
+        margin-bottom: 50px;
+        border: 2px solid #6ab2bd;
+    }
+    .threeimg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    .col:not(:last-child){
+        margin-right: 50px;
+    }
+    .threeimg img{
+        width: 250px;
+    }
+    .threeimg p{
+        text-align: center;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .note{
+        background-color: #6ab2bd;
+        padding: 25px 10px;
+        
+    }
+    .aboutme{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	
+	}
+	.aboutmewrap{
+		background-color:#f9fbfc;
+		padding:15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.aboutTxt{
+		text-align: left;
+	}
+    .blue{
+		font-weight: 900;
+		color: #143980!important;
+	}
+    .testimonial{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        background-color: #EAF6F7;
+        border: 2px solid #6AB2BD;
+        padding: 5px 15px;
+        margin-bottom: 50px;
+    }
+    .testimonial:last-child{
+        margin-left: 50px;
+    }
+
+    .fa-star{
+        color: #eebe34;
+    }
+    .testimonial p{
+        text-align: left;
+    }
+
+
+    @media screen and (max-width:1024px) {
+    .imgRight,.imgLeft{
+    flex-direction: column;
+    }
+    .testimonial:last-child{
+        margin-left: 0;
+    }
+    .mobile{
+        display: block!important;
+    }
+    .desk{
+        display: none!important;
+    }
+    .aboutmewrap svg{
+			display: none;
+		}
+		.aboutmewrap{
+			flex-direction: column;
+		}
+		.aboutmewrap h1, .aboutmewrap img{
+			margin: 0;
+		}
+    .imgRight img,.imgLeft img{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    }
+    .disclaimer img{
+    width: 40%;
+    }
+    .threeimg img{
+        width: 80%;
+    }
+    .threeimg{
+        flex-direction: column;
+    }
+
+    }
+    
+    @media screen and (max-width:768px){
+        .bigLine{
+            margin-top: -35px;
+        }
+    p{font-size: 18px!important;}
+    h1{font-size: 25px!important;}
+    .headings{font-size: 22px!important;}
+    .Button{font-size: 18px!important; padding: 10px;}
+    .disclaimer{flex-direction: column; align-items: center;}
+    .disclaimer img{width: 100%;}
+    }
+</style>
+<div class='imgRight'>
+<img src='https://cdn05.zipify.com/7bFwPYvE67OghXik1aAMC_SrII0=/415x148:1200x932/fit-in/1080x0/77ac9fcfe0a647e4a7881c5b1464b6a9/5-ways-ebook-mockup-bg-copy.jpeg' alt='alt-text'>
+<div class='IRText'>
+    <h1 class="blue">Thank You! Your eGuide Will Be In Your Inbox.</h1>
+
+    <h2 style="color: #231F20!important;" class="sub">Be sure to check your spam/junk folder if you don't see it.</h2>
+    <h2 style="text-align: left;" class='headings'>Check Out What's Next... Dr. Marisol Has 3 Castor Oil Pack Secrets To Share With YOU!</h2>
+</div>
+</div>
+
+<div class='imgLeft'>
+<img src='https://cdn05.zipify.com/gmcgQrbO3CQTOPUjdnQJRCE9JeI=/fit-in/960x0/274b5c024b3648b8818f48764255b845/secret-1.png' alt='alt-text'>
+<div class='ILText'>
+<h2 style="text-align: left;" class='headings'>SECRET #1:</h2>
+<h2 class="sub">The Great System Reset </h2>
+<ul>
+    <li>Discover why you feel like a prisoner in your own body</li>
+    <li>Dr. Marisol ND will reveal how this ritual <b>RESETS</b> your entire system</li>
+    <li>Get to know the vital importance of balancing your stress</li>
+    <li>What it FEELS LIKE to do a Castor Oil Pack</li>
+    
+</ul>
+</div>
+</div>
+
+<div class='imgRight'>
+<img src='https://cdn05.zipify.com/9N5CaafjMTHbiyqZjkYCL0lgR_A=/fit-in/960x0/f87421c563d941348b2769a14b9fa8b6/secret2.png' alt='alt-text'>
+<div class='IRText'>
+    <h2 style="text-align: left;" class='headings'>SECRET #2:</h2>
+    <h2 class="sub">The Power of Faith</h2>
+    <ul>
+        <li>Ask yourself "Are all the supplements I'm taking really effective?"</li>
+        <li>Dr. Marisol ND will tell you how often you should be doing your Castor Oil Pack</li>
+        <li>Discover why all health begins <b>IN THE GUT</b></li>
+        <li>Recognize the 5 main benefits of this health ritual</li>
+        <li>Learn WHY you should cut down on supplements + how to start now</li>
+    </ul>
+</div>
+</div>
+
+<div class='imgLeft'>
+<img src='https://cdn05.zipify.com/p4L6S0HH6EfyH-KJab6Wx3sAF8w=/fit-in/960x0/5485418a97f94d668feac07504fe8eeb/secret3.png' alt='alt-text'>
+<div class='ILText'>
+    <h2 style="text-align: left;" class='headings'>SECRET #3:</h2>
+    <h2 class="sub">Go for the Liquid Gold</h2>
+    <ul>
+        <li>Dive into the rich history of Castor Oil Packs used all over the world"</li>
+        <li>Dr. Marisol ND answers the age old question: "Should I just drink castor oil?" <b>PLUS</b> "Can I just do the Lazy Man's Castor Oil Pack?</li>
+        <li>Unearth the real reasons why Castor Oil Packs are so special</li>
+        <li>Why you made the BEST DECISION EVER by buying your castor oil in a <b>GLASS</b> bottle</li>
+    </ul>
+</div>
+</div>
+
+<div  class="testimonial"> 
+    <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> <b>Couldn't Live Without It – Game Changer</b> | For several years it was suggested I try castor oil packs but the mess of them and the quality of the oils on the general market didn't appeal to me THEN my new practitioner introduced me to Dr. Marisol and Queen of Thrones Castor Oil and Pack! What a game changer for me. I love the education Dr. Marisol provides about castor oil benefits, along with the Queen of Thrones Castor Oil Pack which is <b>INCREDIBLY EASY</b> to use and maintain. I feel confident when I use the Queen of Thrones Castor Oil as I trust is processed in a sustainable and healthy way... the ways are endless to use this product. Thanks Dr. Marisol for all you do and being the Queen you are! <br>
+        – Victoria Lynch </p>
+</div>
+
+<div class="threeimg">
+    <div  class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> 
+            I’ve been doing the castor oil packs for the last 2 weeks... and i’ve been waking early ready to go for the day, <b>no fogginess</b>, with lots of energy and also has <b>helped my constipation</b>. Highly recommend. <br>
+             – Lise Prewitt
+        </p>
+    </div>
+    <div class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br> ...I immediately noticed an easier time falling asleep and more peaceful rest. It has been easier for me to get out of bed in the morning, which has always been hard... So simple, so easy with a huge return. <br>
+            – Jill Jackson </p>
+    </div>
+    <!-- <div style="margin-bottom: 50px;" class="testimonial"> 
+        <p> <span>  <i class="fas fa-star"> </i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <br>My new go to hair treatment. <b>Love it!</b> <br>
+        - Debbie R. </p>
+    </div> -->
+</div>
+
